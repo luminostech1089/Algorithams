@@ -1,0 +1,19 @@
+#--------------------------------------------
+# A function to create binary search tree.
+#--------------------------------------------
+
+class Node():
+    def __init__(self, value):
+        self.value = value
+        self.left = self.right = None
+
+def insert_node_into_tree(node, value):
+    if not node: # If node is empty
+        node = Node(value)
+    else:
+        if value <= node.value: # Insert into left of node
+            node.left = insert_node_into_tree(node.left, value)
+        else: # Insert into right of node
+            node.right = insert_node_into_tree(node.right, value)
+    return node
+ 
