@@ -17,3 +17,20 @@ def insert_node_into_tree(node, value):
             node.right = insert_node_into_tree(node.right, value)
     return node
  
+def preorder(node):
+    """
+    Function for preorder traversal of binary search tree
+    """
+    print node.value,
+    if node.left:
+        preorder(node.left)
+    if node.right:
+        preorder(node.right)
+        
+if __name__ == "__main__":
+    # Create a tree
+    node_values = [10,40,20,30,10]
+    rootNode = None
+    for value in node_values:
+        rootNode = insert_node_into_tree(rootNode, value)
+    preorder(rootNode)
