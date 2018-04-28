@@ -1,1 +1,1 @@
-# Algorithms - Collection of code for some complicated problems
+# Algorithms - Collection of code for some interesting problems
