@@ -1,0 +1,9 @@
+#-----------------------------------------
+# Generate fibonacci series of length x
+#-----------------------------------------
+length_of_fibonacci = 10
+a,b = 0,1
+print a,b,
+for _ in xrange(length_of_fibonacci-2):
+    a,b = b,a+b
+    print b,
