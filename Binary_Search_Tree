@@ -27,6 +27,29 @@ def preorder(node):
     if node.right:
         preorder(node.right)
         
+def height(root):
+"""
+1. If tree is empty then return 0
+2. Else
+     (a) Get the max depth of left subtree recursively  i.e., 
+          call maxDepth( tree->left-subtree)
+     (a) Get the max depth of right subtree recursively  i.e., 
+          call maxDepth( tree->right-subtree)
+     (c) Get the max of max depths of left and right 
+          subtrees and add 1 to it for the current node.
+         max_depth = max(max dept of left subtree,  
+                             max depth of right subtree) 
+                             + 1
+     (d) Return max_depth
+"""
+    if root == None:
+        return 0
+    else:
+        if root.left == None and root.right == None:
+            return max(height(root.left), height(root.right))
+        else:
+            return max(height(root.left), height(root.right))+1
+        
 if __name__ == "__main__":
     # Create a tree
     node_values = [10,40,20,30,10]
