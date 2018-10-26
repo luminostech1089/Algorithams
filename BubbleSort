@@ -27,3 +27,14 @@ def bubble_sort(arr):
             break
 
     return arr
+
+
+import random
+random_list = [random.randrange(start=1, stop=10000, step=1) for _ in range(1000)]
+import timeit
+print timeit.timeit(stmt="bubble_sort(random_list)", setup="from __main__ import bubble_sort, random_list", number=10)
+print timeit.timeit(stmt="sorted(random_list)", setup="from __main__ import random_list",number=10)
+
+# Output
+0.448231115772  --> using bubble sort
+0.000165333536821  --> using python sorted method
