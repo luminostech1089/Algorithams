@@ -1,0 +1,29 @@
+============
+Bubble Sort
+============
+
+def bubble_sort(arr):
+    """
+    Worst case time complexity: O(n*n)
+    Best case time complexity: O(n)
+    """
+    array_len = len(arr)
+
+    is_swapped = False
+
+    # Traverse through all the elements in array
+    for i in range(array_len):
+
+        # Last i elements are already in place
+        for j in range(0, array_len-i-1):
+            is_swapped = True
+            if arr[j] > arr[j+1]:
+                arr[j], arr[j+1] = arr[j+1], arr[j]
+
+        # In case of partially sorted list , total number of comparisons
+        # would be less. So if no swap is detected in loop we can break
+        # This we we can optimize the bubble sort
+        if not is_swapped:
+            break
+
+    return arr
