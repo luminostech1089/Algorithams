@@ -1,6 +1,24 @@
 Graph Teminologies:
+-------------------
 
 1. Vertex - It is a point where multiple lines meet. Also called as node.
 2. Edge - It is a line that connects two vertices.
 3. Degree Of Vertex - A degree of vertex is the number of edges connected to it.
 4. Parallel Edges - If two vertices are connected by more than one edges such edges are clalled as parallel edges.
+
+Graph Traversal:
+----------------
+Graph traversal referes to visiting each vertex and edge in the graph only once in well defined order. 
+Graph traversal methods are:
+1. Breadth First Serach
+2. Depth First Serach
+3. Binary Search Tree
+
+Breadth First Search:
+---------------------
+Start from source node and traverse the graph layer wise.
+I) First move horizontally and visit all the nodes in current layer
+II) Move to the next layesr and repeat the steps above
+BFS always finds shortest path to the goal.
+However for larger and complex graphs, its performance is very slow and it takes mpore memory.
+
