@@ -1,5 +1,7 @@
 #-----------------------------------------
 # Generate fibonacci series of length x
+# Fibbonaci numers in aninteger sequence where every number after the first two is the sum of the two preceding ones
+# First two numbers can be 1 and 1 or 0 and 1
 #-----------------------------------------
 length_of_fibonacci = 10
 a,b = 0,1
