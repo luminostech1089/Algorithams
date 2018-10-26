@@ -1,0 +1,6 @@
+Graph Teminologies:
+
+1. Vertex - It is a point where multiple lines meet. Also called as node.
+2. Edge - It is a line that connects two vertices.
+3. Degree Of Vertex - A degree of vertex is the number of edges connected to it.
+4. Parallel Edges - If two vertices are connected by more than one edges such edges are clalled as parallel edges.
